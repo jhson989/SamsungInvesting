@@ -1,10 +1,12 @@
 from PyQt5.QtWidgets import (
-    QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
-    QPushButton, QLabel, QTableWidget, QTableWidgetItem, QHeaderView,
+    QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel,
 )
-from PyQt5.QtCore import QTimer, Qt
+from PyQt5.QtCore import QUrl, QTimer
+from PyQt5.QtWebEngineWidgets import QWebEngineView
 
-from collector.stock_collector import StockCollector, SAMSUNG_TICKER
+from collector.stock_collector import StockCollector
+
+DASHBOARD_URL = 'http://localhost:5000/'
 
 
 class MainWindow(QMainWindow):
@@ -14,11 +16,6 @@ class MainWindow(QMainWindow):
         self.collector = StockCollector(db)
         self._setup_ui()
 
-        self._timer = QTimer(self)
-        self._timer.timeout.connect(self._refresh)
-        self._timer.start(60_000)
-        self._refresh()
-
     def _setup_ui(self):
         self.setWindowTitle('삼성전자 1분 주가 수집기')
         self.setMinimumSize(860, 580)
@@ -26,9 +23,12 @@ class MainWindow(QMainWindow):
         root = QWidget()
         self.setCentralWidget(root)
         layout = QVBoxLayout(root)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(0)
 
-        # ── top bar ──────────────────────────────────────────────────────────
+        # ── native control bar (collector start/stop) ────────────────────────
         bar = QHBoxLayout()
+        bar.setContentsMargins(12, 8, 12, 8)
 
         self.status_lbl = QLabel('중지됨')
         self.status_lbl.setStyleSheet('font-size:13px; font-weight:bold; color:gray;')
@@ -46,20 +46,16 @@ class MainWindow(QMainWindow):
         bar.addWidget(self.toggle_btn)
         layout.addLayout(bar)
 
-        # ── current price ─────────────────────────────────────────────────────
-        self.price_lbl = QLabel('현재가: —')
-        self.price_lbl.setStyleSheet('font-size:26px; font-weight:bold; color:#c62828;')
-        layout.addWidget(self.price_lbl)
+        # ── shared dashboard (same HTML the browser sees) ────────────────────
+        self.web_view = QWebEngineView()
+        self.web_view.loadFinished.connect(self._on_load_finished)
+        self.web_view.load(QUrl(DASHBOARD_URL))
+        layout.addWidget(self.web_view)
 
-        # ── table ─────────────────────────────────────────────────────────────
-        self.table = QTableWidget()
-        self.table.setColumnCount(6)
-        self.table.setHorizontalHeaderLabels(['시간', '시가', '고가', '저가', '종가', '거래량'])
-        self.table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        self.table.setEditTriggers(QTableWidget.NoEditTriggers)
-        self.table.setAlternatingRowColors(True)
-        self.table.setSelectionBehavior(QTableWidget.SelectRows)
-        layout.addWidget(self.table)
+    def _on_load_finished(self, ok):
+        # Retry once shortly if the view loaded before Flask was ready.
+        if not ok:
+            QTimer.singleShot(500, lambda: self.web_view.load(QUrl(DASHBOARD_URL)))
 
     def _toggle(self):
         if self.collector.running:
@@ -72,22 +68,6 @@ class MainWindow(QMainWindow):
             self.toggle_btn.setText('수집 중지')
             self.status_lbl.setText('수집 중…')
             self.status_lbl.setStyleSheet('font-size:13px; font-weight:bold; color:green;')
-
-    def _refresh(self):
-        rows = self.db.get_latest(SAMSUNG_TICKER, 60)
-        self.table.setRowCount(len(rows))
-        for i, row in enumerate(rows):
-            time_str = row['datetime'][-8:]  # HH:MM:SS
-            self.table.setItem(i, 0, QTableWidgetItem(time_str))
-            for col, key in enumerate(['open', 'high', 'low', 'close', 'volume'], start=1):
-                val = row.get(key) or 0
-                text = f'{val:,}'
-                item = QTableWidgetItem(text)
-                item.setTextAlignment(Qt.AlignRight | Qt.AlignVCenter)
-                self.table.setItem(i, col, item)
-
-        if rows:
-            self.price_lbl.setText(f"현재가: {rows[-1]['close']:,} 원")
 
     def closeEvent(self, event):
         self.collector.stop()

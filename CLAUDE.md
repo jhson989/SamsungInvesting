@@ -5,12 +5,15 @@ PyQt5 GUI + Flask web server that collects Samsung Electronics (005930) 1-minute
 
 ## Architecture
 ```
-main.py → starts Flask in a daemon thread, then launches PyQt5 app
-GUI (PyQt5)    — local desktop window
-Web (Flask)    — http://localhost:5000, accessible from any browser
-Collector      — APScheduler job every 1 min using pykrx
+main.py → starts Flask in a daemon thread, waits for it, then launches PyQt5 app
+GUI (PyQt5)    — desktop window: native start/stop bar + QWebEngineView that
+                 embeds http://localhost:5000/ (same HTML the browser sees)
+Web (Flask)    — http://localhost:5000, accessible from any browser (view-only)
+Collector      — APScheduler job every 1 min using pykrx (owned by MainWindow)
 Database       — SQLite3 at ~/.samsung_stock/stock.db
 ```
+The desktop and the browser render the **same** `web/templates/index.html`; the Qt
+window only adds a native control bar to start/stop the collector.
 
 ## Key Files
 | File | Role |
@@ -18,9 +21,9 @@ Database       — SQLite3 at ~/.samsung_stock/stock.db
 | `main.py` | Entry point: wires DB → Flask thread → PyQt5 app |
 | `database/db.py` | SQLite CRUD: `setup()`, `upsert()`, `get_latest()`, `get_by_date()` |
 | `collector/stock_collector.py` | `StockCollector`: start/stop APScheduler, fetch via pykrx |
-| `gui/main_window.py` | `MainWindow(QMainWindow)`: toggle button, price label, 60-row table |
+| `gui/main_window.py` | `MainWindow(QMainWindow)`: native start/stop bar + `QWebEngineView` embedding the web dashboard |
 | `web/server.py` | `create_app(db)`: Flask factory |
-| `web/templates/index.html` | Single-page auto-refresh UI |
+| `web/templates/index.html` | Single-page auto-refresh UI — **shared** by web browser and the Qt `QWebEngineView` |
 
 ## DB Schema
 ```sql
@@ -45,6 +48,7 @@ CREATE INDEX idx_ticker_dt ON stock_prices(ticker, datetime);
 
 ## Key Dependencies
 - `PyQt5` — GUI framework
+- `PyQtWebEngine` — `QWebEngineView` used by the desktop window to render the shared web dashboard
 - `Flask` — web server (runs in daemon thread alongside PyQt)
 - `pykrx` — Korean stock data; `get_market_ohlcv_by_minute(ticker, date)` returns DataFrame with columns: 시가/고가/저가/종가/거래량
 - `APScheduler` — BackgroundScheduler for 1-minute polling
