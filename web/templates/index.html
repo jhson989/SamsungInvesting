@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>삼성전자 1분 주가</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #222; }
+  header { background: #1565c0; color: #fff; padding: 16px 24px; }
+  header h1 { font-size: 1.3rem; }
+  header span { font-size: 0.85rem; opacity: .8; }
+  .price-box { padding: 16px 24px; }
+  .price-box .current { font-size: 2.2rem; font-weight: bold; color: #c62828; }
+  .price-box .meta { font-size: 0.85rem; color: #666; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; }
+  th, td { padding: 8px 12px; text-align: right; border-bottom: 1px solid #eee; }
+  th:first-child, td:first-child { text-align: left; }
+  th { background: #e3f2fd; font-size: 0.85rem; position: sticky; top: 0; }
+  tr:hover { background: #f9f9f9; }
+  .table-wrap { overflow-y: auto; max-height: calc(100vh - 180px); margin: 0 24px 24px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+  .up   { color: #c62828; }
+  .down { color: #1565c0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>삼성전자 (005930) 1분 주가</h1>
+  <span id="last-update">—</span>
+</header>
+
+<div class="price-box">
+  <div class="current" id="current-price">—</div>
+  <div class="meta" id="price-meta">데이터를 불러오는 중…</div>
+</div>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>시간</th><th>시가</th><th>고가</th><th>저가</th><th>종가</th><th>거래량</th></tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+<script>
+const fmt = n => Number(n).toLocaleString('ko-KR');
+
+async function load() {
+  const res = await fetch('/api/latest?limit=60');
+  const rows = await res.json();
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+
+  rows.slice().reverse().forEach((r, i) => {
+    const tr = document.createElement('tr');
+    const time = r.datetime.slice(-8);
+    const prev = rows[rows.length - 2 - i];
+    const cls = prev ? (r.close >= prev.close ? 'up' : 'down') : '';
+    tr.innerHTML = `
+      <td>${time}</td>
+      <td>${fmt(r.open)}</td>
+      <td>${fmt(r.high)}</td>
+      <td>${fmt(r.low)}</td>
+      <td class="${cls}">${fmt(r.close)}</td>
+      <td>${fmt(r.volume)}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  if (rows.length) {
+    const last = rows[rows.length - 1];
+    document.getElementById('current-price').textContent = fmt(last.close) + ' 원';
+    document.getElementById('price-meta').textContent =
+      `마지막 업데이트: ${last.datetime}`;
+  }
+  document.getElementById('last-update').textContent =
+    '페이지 갱신: ' + new Date().toLocaleTimeString('ko-KR');
+}
+
+load();
+setInterval(load, 60_000);
+</script>
+</body>
+</html>
