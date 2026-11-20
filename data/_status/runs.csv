@@ -16,3 +16,20 @@ naver_trend_samsung,True,60,,2026-11-20T14:41:26+09:00,backfill,2026-11-20T14:41
 krx_flows_samsung,False,0,ValueError: empty response,2026-11-20T14:41:27+09:00,backfill,2026-11-20T14:41:44+09:00
 daum_daily_sox,True,800,,2026-11-20T14:41:34+09:00,backfill,2026-11-20T14:41:44+09:00
 yahoo_daily_us,True,5298,,2026-11-20T14:41:43+09:00,backfill,2026-11-20T14:41:44+09:00
+daum_quote_samsung,True,2,,2026-11-20T14:43:18+09:00,backfill,2026-11-20T14:44:04+09:00
+daum_quote_skhynix,True,2,,2026-11-20T14:43:20+09:00,backfill,2026-11-20T14:44:04+09:00
+daum_quote_kospi,True,2,,2026-11-20T14:43:20+09:00,backfill,2026-11-20T14:44:04+09:00
+daum_quote_kosdaq,True,2,,2026-11-20T14:43:21+09:00,backfill,2026-11-20T14:44:04+09:00
+naver_realtime_samsung,True,2,,2026-11-20T14:43:22+09:00,backfill,2026-11-20T14:44:04+09:00
+daum_daily_samsung,True,600,,2026-11-20T14:43:23+09:00,backfill,2026-11-20T14:44:04+09:00
+daum_daily_skhynix,True,600,,2026-11-20T14:43:25+09:00,backfill,2026-11-20T14:44:04+09:00
+daum_daily_kospi,True,600,,2026-11-20T14:43:26+09:00,backfill,2026-11-20T14:44:04+09:00
+daum_daily_kosdaq,True,600,,2026-11-20T14:43:27+09:00,backfill,2026-11-20T14:44:04+09:00
+naver_daily_samsung,True,531,,2026-11-20T14:43:29+09:00,backfill,2026-11-20T14:44:04+09:00
+naver_daily_kospi,True,531,,2026-11-20T14:43:30+09:00,backfill,2026-11-20T14:44:04+09:00
+yahoo_daily_kr,True,2398,,2026-11-20T14:43:31+09:00,backfill,2026-11-20T14:44:04+09:00
+daum_investor_samsung,True,600,,2026-11-20T14:43:32+09:00,backfill,2026-11-20T14:44:04+09:00
+naver_trend_samsung,True,60,,2026-11-20T14:43:43+09:00,backfill,2026-11-20T14:44:04+09:00
+krx_flows_samsung,False,0,ValueError: empty response,2026-11-20T14:43:45+09:00,backfill,2026-11-20T14:44:04+09:00
+daum_daily_sox,True,800,,2026-11-20T14:43:53+09:00,backfill,2026-11-20T14:44:04+09:00
+yahoo_daily_us,True,5298,,2026-11-20T14:44:03+09:00,backfill,2026-11-20T14:44:04+09:00
