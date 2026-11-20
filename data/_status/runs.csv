@@ -48,3 +48,13 @@ yahoo_daily_kr,True,2398,,2026-11-21T01:01:15+09:00,close,2026-11-21T01:01:46+09
 daum_investor_samsung,False,0,"ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/investor/days?symbolCode=A005930&page=1&perPage=50 (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de69c522010>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",2026-11-21T01:01:16+09:00,close,2026-11-21T01:01:46+09:00
 naver_trend_samsung,True,61,,2026-11-21T01:01:37+09:00,close,2026-11-21T01:01:46+09:00
 krx_flows_samsung,False,0,ValueError: empty response,2026-11-21T01:01:38+09:00,close,2026-11-21T01:01:46+09:00
+daum_daily_samsung,True,600,,2026-11-21T02:58:25+09:00,flows,2026-11-21T02:58:40+09:00
+daum_daily_skhynix,True,600,,2026-11-21T02:58:26+09:00,flows,2026-11-21T02:58:40+09:00
+daum_daily_kospi,True,600,,2026-11-21T02:58:27+09:00,flows,2026-11-21T02:58:40+09:00
+daum_daily_kosdaq,True,600,,2026-11-21T02:58:28+09:00,flows,2026-11-21T02:58:40+09:00
+naver_daily_samsung,True,531,,2026-11-21T02:58:28+09:00,flows,2026-11-21T02:58:40+09:00
+naver_daily_kospi,True,531,,2026-11-21T02:58:29+09:00,flows,2026-11-21T02:58:40+09:00
+yahoo_daily_kr,True,2398,,2026-11-21T02:58:30+09:00,flows,2026-11-21T02:58:40+09:00
+daum_investor_samsung,True,601,,2026-11-21T02:58:32+09:00,flows,2026-11-21T02:58:40+09:00
+naver_trend_samsung,True,61,,2026-11-21T02:58:33+09:00,flows,2026-11-21T02:58:40+09:00
+krx_flows_samsung,False,0,ValueError: empty response,2026-11-21T02:58:34+09:00,flows,2026-11-21T02:58:40+09:00

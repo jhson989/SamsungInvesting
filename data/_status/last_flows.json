@@ -1,0 +1,76 @@
+{
+ "mode": "flows",
+ "finished_at_kst": "2026-11-21T02:58:40+09:00",
+ "results": [
+  {
+   "source": "daum_daily_samsung",
+   "ok": true,
+   "rows": 600,
+   "error": "",
+   "at_kst": "2026-11-21T02:58:25+09:00"
+  },
+  {
+   "source": "daum_daily_skhynix",
+   "ok": true,
+   "rows": 600,
+   "error": "",
+   "at_kst": "2026-11-21T02:58:26+09:00"
+  },
+  {
+   "source": "daum_daily_kospi",
+   "ok": true,
+   "rows": 600,
+   "error": "",
+   "at_kst": "2026-11-21T02:58:27+09:00"
+  },
+  {
+   "source": "daum_daily_kosdaq",
+   "ok": true,
+   "rows": 600,
+   "error": "",
+   "at_kst": "2026-11-21T02:58:28+09:00"
+  },
+  {
+   "source": "naver_daily_samsung",
+   "ok": true,
+   "rows": 531,
+   "error": "",
+   "at_kst": "2026-11-21T02:58:28+09:00"
+  },
+  {
+   "source": "naver_daily_kospi",
+   "ok": true,
+   "rows": 531,
+   "error": "",
+   "at_kst": "2026-11-21T02:58:29+09:00"
+  },
+  {
+   "source": "yahoo_daily_kr",
+   "ok": true,
+   "rows": 2398,
+   "error": "",
+   "at_kst": "2026-11-21T02:58:30+09:00"
+  },
+  {
+   "source": "daum_investor_samsung",
+   "ok": true,
+   "rows": 601,
+   "error": "",
+   "at_kst": "2026-11-21T02:58:32+09:00"
+  },
+  {
+   "source": "naver_trend_samsung",
+   "ok": true,
+   "rows": 61,
+   "error": "",
+   "at_kst": "2026-11-21T02:58:33+09:00"
+  },
+  {
+   "source": "krx_flows_samsung",
+   "ok": false,
+   "rows": 0,
+   "error": "ValueError: empty response",
+   "at_kst": "2026-11-21T02:58:34+09:00"
+  }
+ ]
+}
