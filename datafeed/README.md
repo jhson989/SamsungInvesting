@@ -25,5 +25,8 @@ A push to `datafeed/**` runs `backfill` (about 2 years of history).
 - **Use `changeRate` for daily returns, not `tradePrice.pct_change()`.** On some days Daum's
   daily `tradePrice` includes the NXT (after-hours) last trade, while `changeRate` is against the
   official KRX base price. They differed by more than 0.3%p on 33 of 599 days checked (2026-11-20).
+- **Official KRX close**: Daum/Naver daily `tradePrice`/`종가` follow the NXT-integrated last
+  price (e.g. 2026-11-19: 197,400). The official KRX close is in `yahoo_005930.KS.csv` `Close`
+  (2026-11-19: 196,900), which equals the base price implied by Daum's next-day `changePrice`.
 - Intraday values are snapshots, not closes. Check `tradeTime` / `fetched_at_kst`.
 - Failed sources leave gaps. Nothing is filled or estimated.
