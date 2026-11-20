@@ -126,7 +126,7 @@
    }
   },
   "naver": {
-   "fetched_at_kst": "2026-11-20T14:44:31+09:00",
+   "fetched_at_kst": "2026-11-21T00:59:53+09:00",
    "raw": {
     "itemCode": "005930",
     "stockName": "삼성전자",
@@ -145,14 +145,14 @@
      "stockType": "domestic",
      "name": "KOSPI"
     },
-    "closePrice": "181,600",
-    "compareToPreviousClosePrice": "-15,300",
+    "closePrice": "180,900",
+    "compareToPreviousClosePrice": "-16,000",
     "compareToPreviousPrice": {
      "code": "5",
      "text": "하락",
      "name": "FALLING"
     },
-    "fluctuationsRatio": "-7.77",
+    "fluctuationsRatio": "-8.13",
     "tradeStopType": {
      "code": "1",
      "text": "운영.Trading",
@@ -163,27 +163,27 @@
     "tradableStatusUpdatedAt": "2026-11-20T08:01:45.61+09:00",
     "openPrice": "188,100",
     "highPrice": "189,300",
-    "lowPrice": "181,400",
-    "accumulatedTradingVolume": "12,929,859",
-    "accumulatedTradingValue": "2조 3,947억",
-    "marketStatus": "OPEN",
-    "marketStatusDetailType": "open",
-    "localTradedAt": "2026-11-20T14:44:31.310744+09:00",
+    "lowPrice": "180,100",
+    "accumulatedTradingVolume": "17,706,899",
+    "accumulatedTradingValue": "3조 2,673억",
+    "marketStatus": "CLOSE",
+    "marketStatusDetailType": "close",
+    "localTradedAt": "2026-11-20T20:00:00+09:00",
     "overMarketPriceInfo": {
-     "tradingSessionType": "REGULAR_MARKET",
-     "overMarketStatus": "OPEN",
-     "overPrice": "181,600",
+     "tradingSessionType": "AFTER_MARKET",
+     "overMarketStatus": "CLOSE",
+     "overPrice": "180,900",
      "openPrice": "190,800",
      "highPrice": "190,800",
-     "lowPrice": "181,500",
+     "lowPrice": "180,100",
      "compareToPreviousPrice": {
       "code": "5",
       "text": "하락",
       "name": "FALLING"
      },
-     "compareToPreviousClosePrice": "-15,300",
-     "fluctuationsRatio": "-7.77",
-     "localTradedAt": "2026-11-20T14:44:31.310762+09:00",
+     "compareToPreviousClosePrice": "-16,000",
+     "fluctuationsRatio": "-8.13",
+     "localTradedAt": "2026-11-20T20:00:00.000000+09:00",
      "tradeStopType": {
       "code": "1",
       "text": "운영.Trading",
@@ -192,19 +192,19 @@
      "tradableStatus": "tradable",
      "tradableStatusCode": "ok",
      "tradableStatusUpdatedAt": "2026-11-20T07:10:13.826+09:00",
-     "accumulatedTradingVolume": "7,916,253",
-     "accumulatedTradingValue": "1조 4,738억",
-     "accumulatedTradingVolumeRaw": "7916253",
-     "accumulatedTradingValueRaw": "1473848000000"
+     "accumulatedTradingVolume": "10,943,551",
+     "accumulatedTradingValue": "2조 247억",
+     "accumulatedTradingVolumeRaw": "10943551",
+     "accumulatedTradingValueRaw": "2024681000000"
     },
     "integratedPriceInfo": {
      "openPrice": "190,800",
      "highPrice": "190,800",
-     "lowPrice": "181,400",
-     "accumulatedTradingVolume": "20,846,112",
-     "accumulatedTradingValue": "3조 8,686억",
-     "accumulatedTradingVolumeRaw": "20846112",
-     "accumulatedTradingValueRaw": "3868553000000"
+     "lowPrice": "180,100",
+     "accumulatedTradingVolume": "28,650,450",
+     "accumulatedTradingValue": "5조 2,920억",
+     "accumulatedTradingVolumeRaw": "28650450",
+     "accumulatedTradingValueRaw": "5292017000000"
     },
     "isinCode": "KR7005930003",
     "myDataCode": null,
@@ -215,17 +215,17 @@
      "name": "KRW"
     },
     "symbolCode": "005930",
-    "marketSessionType": "regularMarket",
-    "closePriceRaw": "181600",
-    "compareToPreviousClosePriceRaw": "-15300",
-    "fluctuationsRatioRaw": "-7.77",
+    "closePriceRaw": "180900",
+    "compareToPreviousClosePriceRaw": "-16000",
+    "fluctuationsRatioRaw": "-8.13",
     "openPriceRaw": "188100",
     "highPriceRaw": "189300",
-    "lowPriceRaw": "181400",
-    "accumulatedTradingVolumeRaw": "12929859",
-    "accumulatedTradingValueRaw": "2394705000000",
-    "marketValueFull": "1,061,684,195,212,800",
-    "marketValueFullRaw": "1061684195212800"
+    "marketSessionType": "afterMarket",
+    "lowPriceRaw": "180100",
+    "accumulatedTradingVolumeRaw": "17706899",
+    "accumulatedTradingValueRaw": "3267336000000",
+    "marketValueFull": "1,057,591,800,187,200",
+    "marketValueFullRaw": "1057591800187200"
    }
   }
  },

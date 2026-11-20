@@ -1,0 +1,111 @@
+{
+ "mode": "close",
+ "finished_at_kst": "2026-11-21T01:01:46+09:00",
+ "results": [
+  {
+   "source": "daum_quote_samsung",
+   "ok": false,
+   "rows": 0,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/quotes/A005930?summary=false&changeStatistics=true (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de6a17d52d0>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",
+   "at_kst": "2026-11-21T00:58:31+09:00"
+  },
+  {
+   "source": "daum_quote_skhynix",
+   "ok": false,
+   "rows": 0,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/quotes/A000660?summary=false&changeStatistics=true (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de69de83e90>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",
+   "at_kst": "2026-11-21T00:58:51+09:00"
+  },
+  {
+   "source": "daum_quote_kospi",
+   "ok": false,
+   "rows": 0,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/quotes/KGG01P?summary=false&changeStatistics=true (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de69dea6050>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",
+   "at_kst": "2026-11-21T00:59:12+09:00"
+  },
+  {
+   "source": "daum_quote_kosdaq",
+   "ok": false,
+   "rows": 0,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/quotes/QGG01P?summary=false&changeStatistics=true (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de69de83e90>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",
+   "at_kst": "2026-11-21T00:59:32+09:00"
+  },
+  {
+   "source": "naver_realtime_samsung",
+   "ok": true,
+   "rows": 1,
+   "error": "",
+   "at_kst": "2026-11-21T00:59:52+09:00"
+  },
+  {
+   "source": "daum_daily_samsung",
+   "ok": false,
+   "rows": 0,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/charts/A005930/days?limit=10&adjusted=true (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de69de4d110>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",
+   "at_kst": "2026-11-21T00:59:53+09:00"
+  },
+  {
+   "source": "daum_daily_skhynix",
+   "ok": false,
+   "rows": 0,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/charts/A000660/days?limit=10&adjusted=true (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de69df3b550>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",
+   "at_kst": "2026-11-21T01:00:13+09:00"
+  },
+  {
+   "source": "daum_daily_kospi",
+   "ok": false,
+   "rows": 0,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/charts/KGG01P/days?limit=10&adjusted=true (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de69deba450>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",
+   "at_kst": "2026-11-21T01:00:33+09:00"
+  },
+  {
+   "source": "daum_daily_kosdaq",
+   "ok": false,
+   "rows": 0,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/charts/QGG01P/days?limit=10&adjusted=true (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de69de4ce50>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",
+   "at_kst": "2026-11-21T01:00:54+09:00"
+  },
+  {
+   "source": "naver_daily_samsung",
+   "ok": true,
+   "rows": 531,
+   "error": "",
+   "at_kst": "2026-11-21T01:01:14+09:00"
+  },
+  {
+   "source": "naver_daily_kospi",
+   "ok": true,
+   "rows": 531,
+   "error": "",
+   "at_kst": "2026-11-21T01:01:15+09:00"
+  },
+  {
+   "source": "yahoo_daily_kr",
+   "ok": true,
+   "rows": 2398,
+   "error": "",
+   "at_kst": "2026-11-21T01:01:15+09:00"
+  },
+  {
+   "source": "daum_investor_samsung",
+   "ok": false,
+   "rows": 0,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='finance.daum.net', port=443): Max retries exceeded with url: /api/investor/days?symbolCode=A005930&page=1&perPage=50 (Caused by ConnectTimeoutError(<HTTPSConnection(host='finance.daum.net', port=443) at 0x7de69c522010>, 'Connection to finance.daum.net timed out. (connect timeout=20)'))",
+   "at_kst": "2026-11-21T01:01:16+09:00"
+  },
+  {
+   "source": "naver_trend_samsung",
+   "ok": true,
+   "rows": 61,
+   "error": "",
+   "at_kst": "2026-11-21T01:01:37+09:00"
+  },
+  {
+   "source": "krx_flows_samsung",
+   "ok": false,
+   "rows": 0,
+   "error": "ValueError: empty response",
+   "at_kst": "2026-11-21T01:01:38+09:00"
+  }
+ ]
+}
