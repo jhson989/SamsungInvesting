@@ -85,3 +85,5 @@ yahoo_daily_kr,True,2398,,2026-11-24T06:38:33+09:00,flows,2026-11-24T06:38:46+09
 daum_investor_samsung,True,602,,2026-11-24T06:38:35+09:00,flows,2026-11-24T06:38:46+09:00
 naver_trend_samsung,True,62,,2026-11-24T06:38:36+09:00,flows,2026-11-24T06:38:46+09:00
 krx_flows_samsung,False,0,ValueError: empty response,2026-11-24T06:38:36+09:00,flows,2026-11-24T06:38:46+09:00
+daum_daily_sox,True,802,,2026-11-24T14:52:48+09:00,us,2026-11-24T14:52:52+09:00
+yahoo_daily_us,True,5312,,2026-11-24T14:52:49+09:00,us,2026-11-24T14:52:52+09:00
