@@ -1,20 +1,20 @@
 {
  "mode": "us",
- "finished_at_kst": "2026-11-26T13:04:48+09:00",
+ "finished_at_kst": "2026-11-27T13:02:50+09:00",
  "results": [
   {
    "source": "daum_daily_sox",
    "ok": true,
    "rows": 804,
    "error": "",
-   "at_kst": "2026-11-26T13:04:45+09:00"
+   "at_kst": "2026-11-27T13:02:46+09:00"
   },
   {
    "source": "yahoo_daily_us",
    "ok": true,
-   "rows": 5326,
+   "rows": 5327,
    "error": "",
-   "at_kst": "2026-11-26T13:04:47+09:00"
+   "at_kst": "2026-11-27T13:02:48+09:00"
   }
  ]
 }
