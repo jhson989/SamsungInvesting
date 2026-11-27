@@ -1,111 +1,111 @@
 {
  "mode": "close",
- "finished_at_kst": "2026-11-27T02:37:59+09:00",
+ "finished_at_kst": "2026-11-28T02:20:34+09:00",
  "results": [
   {
    "source": "daum_quote_samsung",
    "ok": true,
    "rows": 1,
    "error": "",
-   "at_kst": "2026-11-27T02:37:41+09:00"
+   "at_kst": "2026-11-28T02:20:12+09:00"
   },
   {
    "source": "daum_quote_skhynix",
    "ok": true,
    "rows": 1,
    "error": "",
-   "at_kst": "2026-11-27T02:37:42+09:00"
+   "at_kst": "2026-11-28T02:20:14+09:00"
   },
   {
    "source": "daum_quote_kospi",
    "ok": true,
    "rows": 1,
    "error": "",
-   "at_kst": "2026-11-27T02:37:43+09:00"
+   "at_kst": "2026-11-28T02:20:15+09:00"
   },
   {
    "source": "daum_quote_kosdaq",
    "ok": true,
    "rows": 1,
    "error": "",
-   "at_kst": "2026-11-27T02:37:43+09:00"
+   "at_kst": "2026-11-28T02:20:16+09:00"
   },
   {
    "source": "naver_realtime_samsung",
    "ok": true,
    "rows": 1,
    "error": "",
-   "at_kst": "2026-11-27T02:37:44+09:00"
+   "at_kst": "2026-11-28T02:20:17+09:00"
   },
   {
    "source": "daum_daily_samsung",
    "ok": true,
-   "rows": 604,
+   "rows": 605,
    "error": "",
-   "at_kst": "2026-11-27T02:37:45+09:00"
+   "at_kst": "2026-11-28T02:20:18+09:00"
   },
   {
    "source": "daum_daily_skhynix",
    "ok": true,
-   "rows": 604,
+   "rows": 605,
    "error": "",
-   "at_kst": "2026-11-27T02:37:45+09:00"
+   "at_kst": "2026-11-28T02:20:19+09:00"
   },
   {
    "source": "daum_daily_kospi",
    "ok": true,
-   "rows": 604,
+   "rows": 605,
    "error": "",
-   "at_kst": "2026-11-27T02:37:46+09:00"
+   "at_kst": "2026-11-28T02:20:20+09:00"
   },
   {
    "source": "daum_daily_kosdaq",
    "ok": true,
-   "rows": 604,
+   "rows": 605,
    "error": "",
-   "at_kst": "2026-11-27T02:37:47+09:00"
+   "at_kst": "2026-11-28T02:20:21+09:00"
   },
   {
    "source": "naver_daily_samsung",
    "ok": true,
-   "rows": 535,
+   "rows": 536,
    "error": "",
-   "at_kst": "2026-11-27T02:37:48+09:00"
+   "at_kst": "2026-11-28T02:20:22+09:00"
   },
   {
    "source": "naver_daily_kospi",
    "ok": true,
-   "rows": 535,
+   "rows": 536,
    "error": "",
-   "at_kst": "2026-11-27T02:37:48+09:00"
+   "at_kst": "2026-11-28T02:20:23+09:00"
   },
   {
    "source": "yahoo_daily_kr",
    "ok": true,
-   "rows": 2407,
+   "rows": 2413,
    "error": "",
-   "at_kst": "2026-11-27T02:37:49+09:00"
+   "at_kst": "2026-11-28T02:20:24+09:00"
   },
   {
    "source": "daum_investor_samsung",
    "ok": true,
-   "rows": 605,
+   "rows": 606,
    "error": "",
-   "at_kst": "2026-11-27T02:37:50+09:00"
+   "at_kst": "2026-11-28T02:20:25+09:00"
   },
   {
    "source": "naver_trend_samsung",
    "ok": true,
-   "rows": 65,
+   "rows": 66,
    "error": "",
-   "at_kst": "2026-11-27T02:37:51+09:00"
+   "at_kst": "2026-11-28T02:20:26+09:00"
   },
   {
    "source": "krx_flows_samsung",
    "ok": false,
    "rows": 0,
    "error": "ValueError: empty response",
-   "at_kst": "2026-11-27T02:37:52+09:00"
+   "at_kst": "2026-11-28T02:20:27+09:00"
   }
  ]
 }
