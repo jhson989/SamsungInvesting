@@ -1,76 +1,76 @@
 {
  "mode": "flows",
- "finished_at_kst": "2026-11-27T04:15:14+09:00",
+ "finished_at_kst": "2026-11-28T04:09:40+09:00",
  "results": [
   {
    "source": "daum_daily_samsung",
    "ok": true,
-   "rows": 604,
+   "rows": 605,
    "error": "",
-   "at_kst": "2026-11-27T04:15:00+09:00"
+   "at_kst": "2026-11-28T04:09:24+09:00"
   },
   {
    "source": "daum_daily_skhynix",
    "ok": true,
-   "rows": 604,
+   "rows": 605,
    "error": "",
-   "at_kst": "2026-11-27T04:15:01+09:00"
+   "at_kst": "2026-11-28T04:09:26+09:00"
   },
   {
    "source": "daum_daily_kospi",
    "ok": true,
-   "rows": 604,
+   "rows": 605,
    "error": "",
-   "at_kst": "2026-11-27T04:15:02+09:00"
+   "at_kst": "2026-11-28T04:09:26+09:00"
   },
   {
    "source": "daum_daily_kosdaq",
    "ok": true,
-   "rows": 604,
+   "rows": 605,
    "error": "",
-   "at_kst": "2026-11-27T04:15:03+09:00"
+   "at_kst": "2026-11-28T04:09:27+09:00"
   },
   {
    "source": "naver_daily_samsung",
    "ok": true,
-   "rows": 535,
+   "rows": 536,
    "error": "",
-   "at_kst": "2026-11-27T04:15:03+09:00"
+   "at_kst": "2026-11-28T04:09:28+09:00"
   },
   {
    "source": "naver_daily_kospi",
    "ok": true,
-   "rows": 535,
+   "rows": 536,
    "error": "",
-   "at_kst": "2026-11-27T04:15:04+09:00"
+   "at_kst": "2026-11-28T04:09:29+09:00"
   },
   {
    "source": "yahoo_daily_kr",
    "ok": true,
-   "rows": 2407,
+   "rows": 2413,
    "error": "",
-   "at_kst": "2026-11-27T04:15:05+09:00"
+   "at_kst": "2026-11-28T04:09:30+09:00"
   },
   {
    "source": "daum_investor_samsung",
    "ok": true,
-   "rows": 605,
+   "rows": 606,
    "error": "",
-   "at_kst": "2026-11-27T04:15:06+09:00"
+   "at_kst": "2026-11-28T04:09:30+09:00"
   },
   {
    "source": "naver_trend_samsung",
    "ok": true,
-   "rows": 65,
+   "rows": 66,
    "error": "",
-   "at_kst": "2026-11-27T04:15:07+09:00"
+   "at_kst": "2026-11-28T04:09:32+09:00"
   },
   {
    "source": "krx_flows_samsung",
    "ok": false,
    "rows": 0,
    "error": "ValueError: empty response",
-   "at_kst": "2026-11-27T04:15:08+09:00"
+   "at_kst": "2026-11-28T04:09:32+09:00"
   }
  ]
 }

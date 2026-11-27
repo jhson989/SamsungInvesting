@@ -183,3 +183,13 @@ yahoo_daily_kr,True,2413,,2026-11-28T02:20:24+09:00,close,2026-11-28T02:20:34+09
 daum_investor_samsung,True,606,,2026-11-28T02:20:25+09:00,close,2026-11-28T02:20:34+09:00
 naver_trend_samsung,True,66,,2026-11-28T02:20:26+09:00,close,2026-11-28T02:20:34+09:00
 krx_flows_samsung,False,0,ValueError: empty response,2026-11-28T02:20:27+09:00,close,2026-11-28T02:20:34+09:00
+daum_daily_samsung,True,605,,2026-11-28T04:09:24+09:00,flows,2026-11-28T04:09:40+09:00
+daum_daily_skhynix,True,605,,2026-11-28T04:09:26+09:00,flows,2026-11-28T04:09:40+09:00
+daum_daily_kospi,True,605,,2026-11-28T04:09:26+09:00,flows,2026-11-28T04:09:40+09:00
+daum_daily_kosdaq,True,605,,2026-11-28T04:09:27+09:00,flows,2026-11-28T04:09:40+09:00
+naver_daily_samsung,True,536,,2026-11-28T04:09:28+09:00,flows,2026-11-28T04:09:40+09:00
+naver_daily_kospi,True,536,,2026-11-28T04:09:29+09:00,flows,2026-11-28T04:09:40+09:00
+yahoo_daily_kr,True,2413,,2026-11-28T04:09:30+09:00,flows,2026-11-28T04:09:40+09:00
+daum_investor_samsung,True,606,,2026-11-28T04:09:30+09:00,flows,2026-11-28T04:09:40+09:00
+naver_trend_samsung,True,66,,2026-11-28T04:09:32+09:00,flows,2026-11-28T04:09:40+09:00
+krx_flows_samsung,False,0,ValueError: empty response,2026-11-28T04:09:32+09:00,flows,2026-11-28T04:09:40+09:00
